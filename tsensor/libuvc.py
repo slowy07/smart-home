@@ -1,18 +1,6 @@
-from ctypes import CDLL
-from ctypes import Structure
-from ctypes import c_int
-from ctypes import CFUNCTYPE
-from ctypes import POINTER
-from ctypes import c_char
-from ctypes import c_long
-from ctypes import c_size_t
-from ctypes import c_ubyte
-from ctypes import c_uint
-from ctypes import c_uint16
-from ctypes import c_uint32
-from ctypes import c_uint8
-from ctypes import c_ulong
-from ctypes import c_void_p
+from ctypes import (CDLL, CFUNCTYPE, POINTER, Structure, c_char, c_int, c_long,
+                    c_size_t, c_ubyte, c_uint, c_uint8, c_uint16, c_uint32,
+                    c_ulong, c_void_p)
 
 
 def load_uvc():

@@ -6,3 +6,4 @@ absl-py
 pillow
 smbus2
 bme680
+wikipedia

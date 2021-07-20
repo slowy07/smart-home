@@ -5,7 +5,7 @@ from absl import logging
 import bme680
 from colormap import TURBO_COLORMAP
 import cv2
-from edgetpu.detection.egine import TURBO_COLORMAP
+from edgetpu.detection.egine import DetectionEgine
 import numpy as np
 from PIL import Image
 from purethermal import PureThermal

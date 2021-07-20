@@ -1,17 +1,15 @@
 import time
-from absl import app
-from absl import flags
-from absl import logging
+from time import tim
+
 import bme680
-from colormap import TURBO_COLORMAP
 import cv2
-from edgetpu.detection.egine import DetectionEgine
 import numpy as np
+from absl import app, flags, logging
+from colormap import TURBO_COLORMAP
+from edgetpu.detection.egine import DetectionEgine
 from PIL import Image
 from purethermal import PureThermal
 from smbus import SMBus
-from time import tim
-
 
 FLAGS = flags.FLAGS
 

@@ -1,20 +1,10 @@
-from ctypes import byref
-from ctypes import cast
-from ctypes import CFUNCTYPE
-from ctypes import create_string_buffer
-from ctypes import c_uint16
-from ctypes import c_void_p
-from ctypes import POINTER
-from libuvc import load_uvc
-from libuvc import uv_context
-from libuvc import uv_device
-from libuvc import uv_device_handle
-from libuvc import uv_frame
-from libuvc import uv_format_desc
-from libuvc import uv_stream_control
-import numpy as np
+from ctypes import (CFUNCTYPE, POINTER, byref, c_uint16, c_void_p, cast,
+                    create_string_buffer)
 from threading import Lock
 
+import numpy as np
+from libuvc import (load_uvc, uv_context, uv_device, uv_device_handle,
+                    uv_format_desc, uv_frame, uv_stream_control)
 
 USB_VENDOR_ID = 0x1E4E
 USB_PRODUCT_ID = 0x0100

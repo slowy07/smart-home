@@ -1,10 +1,10 @@
 from ctypes import (CFUNCTYPE, POINTER, byref, c_uint16, c_void_p, cast,
-                    create_string_buffer)
+                    create_string_buffer) # pylint: disable=unused-import
 from threading import Lock
 
 import numpy as np
 from libuvc import (load_uvc, uv_context, uv_device, uv_device_handle,
-                    uv_format_desc, uv_frame, uv_stream_control)
+                    uv_format_desc, uv_frame, uv_stream_control) # pylint: disable=unused-import
 
 USB_VENDOR_ID = 0x1E4E
 USB_PRODUCT_ID = 0x0100

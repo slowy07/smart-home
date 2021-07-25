@@ -3,12 +3,12 @@ import time
 import bme680
 import cv2
 import numpy as np
-from absl import flags, logging
+from absl import flags, logging # pylint: disable=unused-import
 from colormap import TURBO_COLORMAP
-from edgetpu.detection.egine import DetectionEgine
+from edgetpu.detection.egine import DetectionEgine # pylint: disable=unused-import
 from PIL import Image
-from purethermal import PureThermal
-from smbus import SMBus
+from purethermal import PureThermal # pylint: disable=unused-import
+from smbus import SMBus # pylint: disable=unused-import
 
 FLAGS = flags.FLAGS
 

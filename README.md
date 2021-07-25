@@ -22,3 +22,5 @@ sudo apt-get install git
 ```bash
 pip3 install -r requirements.txt
 ```
+
+![result](resultTerminal.png)

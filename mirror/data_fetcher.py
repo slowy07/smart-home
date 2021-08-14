@@ -42,10 +42,9 @@ class weather_scrapping:
 
     
     def get_weather_information(self):
-        weather_info = self.data_scrapping.find('div', class_='CurrentConditions--phraseValue--17s79').text
-        return weather_info
+        weather_info = self.data_scrapping.find("div",{"data-testid": "wxPhrase"})
+        return weather_info.text
 
     def get_temperature(self):
-        temperature = self.data_scrapping.find('div', class_= 'CurrentConditions--primary--39Y3f').span.text
-        return temperature
-        
+        temperature = self.data_scrapping.find("span", {"data-testid": "TemperatureValue"})
+        return temperature.text
